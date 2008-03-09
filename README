@@ -1,0 +1,24 @@
+convert.rb is a conversion script for Typo 4.11 -> WordPress 2.3
+
+Written by Kevin Ballard <kevin@sb.org>
+
+Requirements:
+
+- RubyGems
+- Sequel
+
+Usage: convert.rb [options] from-db [to-db]
+
+    -p, --prefix PREFIX              Set the WordPress table prefix
+                                     Default: wp_
+
+        --[no-]overwrite             Overwrite existing entries
+        --ask-overwrite              Ask before overwriting existing entries
+                                     [This is the default]
+
+    -h, --help                       Show this message
+
+from-db and to-db are URLs identifying a database.
+Such a URL might look like mysql://username:password@host/blog
+
+See the Sequel documentation for more information
